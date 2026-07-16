@@ -18,9 +18,11 @@ catalog:
   semver: ^7.7.2
   tailwindcss: ^4.1.13
   top-github-dependents-by-stars: ^1.0.4
-  typescript: ^6.0.0
-  vite-plus: 0.2.1
-  vite: npm:@voidzero-dev/vite-plus-core@0.2.1
+  typescript: ^7.0.0
+  vite-plus: 0.0.0-commit.bb0445bf5599a389c324442a3f3f8a8a5db5d83d
+  vite: npm:@voidzero-dev/vite-plus-core@0.0.0-commit.bb0445bf5599a389c324442a3f3f8a8a5db5d83d
+  vitest: 4.1.10
+  "@vitest/browser-playwright": 4.1.10
 
 allowBuilds:
   "@parcel/watcher": true
@@ -33,8 +35,22 @@ onlyBuiltDependencies:
   - esbuild
 overrides:
   vite: "catalog:"
+  vitest: "catalog:"
 peerDependencyRules:
   allowAny:
     - vite
+    - vitest
   allowedVersions:
     vite: "*"
+    vitest: "*"
+minimumReleaseAgeExclude:
+  - "@voidzero-dev/vite-plus-core@0.0.0-commit.bb0445bf5599a389c324442a3f3f8a8a5db5d83d"
+  - "@voidzero-dev/vite-plus-darwin-arm64@0.0.0-commit.bb0445bf5599a389c324442a3f3f8a8a5db5d83d"
+  - "@voidzero-dev/vite-plus-darwin-x64@0.0.0-commit.bb0445bf5599a389c324442a3f3f8a8a5db5d83d"
+  - "@voidzero-dev/vite-plus-linux-arm64-gnu@0.0.0-commit.bb0445bf5599a389c324442a3f3f8a8a5db5d83d"
+  - "@voidzero-dev/vite-plus-linux-arm64-musl@0.0.0-commit.bb0445bf5599a389c324442a3f3f8a8a5db5d83d"
+  - "@voidzero-dev/vite-plus-linux-x64-gnu@0.0.0-commit.bb0445bf5599a389c324442a3f3f8a8a5db5d83d"
+  - "@voidzero-dev/vite-plus-linux-x64-musl@0.0.0-commit.bb0445bf5599a389c324442a3f3f8a8a5db5d83d"
+  - "@voidzero-dev/vite-plus-win32-arm64-msvc@0.0.0-commit.bb0445bf5599a389c324442a3f3f8a8a5db5d83d"
+  - "@voidzero-dev/vite-plus-win32-x64-msvc@0.0.0-commit.bb0445bf5599a389c324442a3f3f8a8a5db5d83d"
+  - vite-plus@0.0.0-commit.bb0445bf5599a389c324442a3f3f8a8a5db5d83d
