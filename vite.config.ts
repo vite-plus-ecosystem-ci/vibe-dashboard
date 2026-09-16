@@ -23,6 +23,7 @@ export default defineConfig({
     },
   },
   test: {
+    clearMocks: false,
     projects: ["apps/dashboard"],
   },
 });

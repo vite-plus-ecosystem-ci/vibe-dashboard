@@ -14,7 +14,9 @@ export default defineConfig({
     },
   },
   test: {
+    clearMocks: false,
     browser: {
+      locators: { exact: false },
       enabled: true,
       provider: playwright(),
       headless: true,
