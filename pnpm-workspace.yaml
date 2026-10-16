@@ -23,6 +23,21 @@ catalog:
   vite: npm:@voidzero-dev/vite-plus-core@1.1.0
 
 minimumReleaseAgeExclude:
+  # ecosystem-ci smoke test: preview builds and freshly pinned toolchain packages
+  - "@oxc-project/*"
+  - oxlint
+  - "@oxlint/*"
+  - oxfmt
+  - "@oxfmt/*"
+  - oxlint-tsgolint
+  - "@oxlint-tsgolint/*"
+  - vitest
+  - "@vitest/*"
+  - tinybench
+  - yuku-core
+  - yuku-parser
+  - "@yuku-core/*"
+  - "@yuku-toolchain/*"
   - vite-plus
   - "@voidzero-dev/*"
 
